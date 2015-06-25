@@ -20,6 +20,14 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 1200, height: 1000});
+  var p = 0;
+  while(p < 1){
+    mainWindow.setProgressBar(p);
+    p += .0005;
+  }
+
+  mainWindow.setProgressBar(-1);
+
 
   // and load the index.html of the app.
   mainWindow.loadUrl('http://www.github.com/mbradleyis');
