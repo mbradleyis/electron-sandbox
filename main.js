@@ -19,7 +19,7 @@ app.on('window-all-closed', function() {
 // initialization and ready for creating browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1200, height: 1000});
+  mainWindow = new BrowserWindow({width: 1200, height: 1000, "node-integration":false});
   var p = 0;
   while(p < 1){
     mainWindow.setProgressBar(p);
