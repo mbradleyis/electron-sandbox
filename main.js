@@ -22,7 +22,7 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 1200, height: 1000});
 
   // and load the index.html of the app.
-  mainWindow.loadUrl('http://www.github.com');
+  mainWindow.loadUrl('http://www.github.com/mbradleyis');
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
